@@ -64,17 +64,6 @@ button:active {
 }
 
 </style>
-<script>
-//console.log hijack
-(function(){
-    var oldLog = console.log;
-    console.log = function (message) {
-        document.getElementById('a').value += message
-        oldLog.apply(arguments);
-    };
-})();
-
-</script>
 <div>
 <h1 style="font-family: Roboto; color: #00ff00">DISCORD NITRO GENERATOR</h1>
 <textarea id="a" rows="11" cols="100" readonly style="resize: none;">

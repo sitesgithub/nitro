@@ -17,7 +17,7 @@ function download(filename, text) {
   element.click();
 
   document.body.removeChild(element);
-
+}
 var textarea = document.getElementById('a')
 if (navigator.userAgent.indexOf('Mobile') !== -1) { document.getElementById('save').style.display = "none"; textarea.style.height = "100px";
 }//resize for mobile

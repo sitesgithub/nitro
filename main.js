@@ -1,3 +1,11 @@
+(function(){
+    var oldLog = console.log;
+    console.log = function (message) {
+        document.getElementById('a').value += message
+        oldLog.apply(arguments);
+    };
+})();
+
 function download(filename, text) {
   var element = document.createElement('a');
   element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));

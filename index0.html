@@ -85,7 +85,8 @@ THIS CAN TAKE LONGER BUT CAN GENERATE MORE CODES!
 <p style="font-family: Arial; color: #00ff00">How much codes do you want generated?</p>
 <input type="text" id="times">
 <p></p>
-<button id='generate' class="button" onclick="var i;for(var i = 0; i < document.getElementById('times').value; i++){getGiftCode()}">
+<button id='generate' class="button" onclick="var i;for(var i = 0; i < document.getElementById('times').value; i++){getGiftCode()}; var textarea = document.getElementById('a');
+textarea.scrollTop = textarea.scrollHeight;">
   Generate Codes!
 </button>
 <p></p>
